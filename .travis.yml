@@ -1,13 +1,13 @@
 language: node_js
 cache:
   directories:
-    - ~!@/.npm
+    - ~/.npm
 node_js:
   - '9'
 git:
   depth: 3
 script:
-- yarn build
+  - yarn build
 deploy:
   provider: pages
   skip-cleanup: true
@@ -17,4 +17,4 @@ deploy:
   target-branch: master
   commit_message: "Deploy release ${TRAVIS_TAG}"
   on:
-    branch: master
+branch: master
