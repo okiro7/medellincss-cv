@@ -15,9 +15,9 @@ const GlobalStyle = createGlobalStyle `
 
 const data = {
     "avatar": "https://media.licdn.com/dms/image/C4E03AQG6Gxj3WbLhpw/profile-displayphoto-shrink_200_200/0?e=1557964800&v=beta&t=woDmucE1OPITkvAV-ry2SJNId0-3vlq2QAcHoqCB4eY",
-    "name": "Diego Castillo Osorio",
-    "profession": "Ing Sistemas",
-    "bio": "BackEnd Aprendiendo FrontEnd , Cilomontañista, etc.... ",
+    "name": "Diego Fernando Castillo Osorio",
+    "profession": "Ingeniero de  Sistemas",
+    "bio": "BackEnd Aprendiendo FrontEnd , Cilomontañista, ",
     "address": "diego.castillo.osorio@gmail.com",
     "social": [
         {
