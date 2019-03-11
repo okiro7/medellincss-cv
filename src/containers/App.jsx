@@ -17,7 +17,7 @@ const data = {
     "avatar": "https://media.licdn.com/dms/image/C4E03AQG6Gxj3WbLhpw/profile-displayphoto-shrink_200_200/0?e=1557964800&v=beta&t=woDmucE1OPITkvAV-ry2SJNId0-3vlq2QAcHoqCB4eY",
     "name": "Diego Fernando Castillo Osorio",
     "profession": "Ingeniero de  Sistemas",
-    "bio": "BackEnd Aprendiendo FrontEnd , Cilomontañista, ",
+    "bio": "BackEnd Aprendiendo FrontEnd , Ciclomontañista.",
     "address": "diego.castillo.osorio@gmail.com",
     "social": [
         {
