@@ -1,5 +1,10 @@
 import React from 'react';
 import About from '../components/About';
+import Sidebar from '../components/Sidebar';
+import Main from '../components/Main';
+import Education from '../components/Education';
+import Info from '../components/Info';
+
 import {createGlobalStyle} from "styled-components";
 
 const GlobalStyle = createGlobalStyle `
@@ -14,7 +19,8 @@ const GlobalStyle = createGlobalStyle `
 `;
 
 const data = {
-    "avatar": "https://media.licdn.com/dms/image/C4E03AQG6Gxj3WbLhpw/profile-displayphoto-shrink_200_200/0?e=1557964800&v=beta&t=woDmucE1OPITkvAV-ry2SJNId0-3vlq2QAcHoqCB4eY",
+    "avatar": "https://media.licdn.com/dms/image/C4E03AQG6Gxj3WbLhpw/profile-displayphoto-shrin" +
+            "k_200_200/0?e=1557964800&v=beta&t=woDmucE1OPITkvAV-ry2SJNId0-3vlq2QAcHoqCB4eY",
     "name": "Diego Fernando Castillo Osorio",
     "profession": "Ingeniero de  Sistemas",
     "bio": "BackEnd Aprendiendo FrontEnd , Ciclomontañista.",
@@ -33,22 +39,36 @@ const data = {
             "name": "github",
             "url": "https://github.com/okiro7"
         }
+    ],
+    "education":[
+        {
+            "degree":"",
+            "institution":"Universidad del Valle",
+            "startDate":"2010/05/01",
+            "endDate":"2015/05/01",
+            "description":"Sede Tulua", 
+        }
     ]
 }
 
 const App = () => {
 
     return (
-        <div>
+        <Main>
             <GlobalStyle/>
-            <About
-                avatar={data.avatar}
-                name={data.name}
-                profession={data.profession}
-                bio={data.bio}
-                address={data.address}
-                social={data.social}/>
-        </div>
+            <Sidebar>
+                <About
+                    avatar={data.avatar}
+                    name={data.name}
+                    profession={data.profession}
+                    bio={data.bio}
+                    address={data.address}
+                    social={data.social}/>
+            </Sidebar>
+            <Info>
+                <Education data={data.education}/>
+            </Info>
+        </Main>
     );
 
 }
