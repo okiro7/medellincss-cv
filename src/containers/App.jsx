@@ -9,12 +9,10 @@ import {createGlobalStyle} from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   body {
-    @import url('https://fonts.googleapis.com/css?family=Lato:300,400|Roboto:300,400,500');
-    @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-    font-family: 'Lato', sans-serif;
+    background: #f5f5f5;
     margin: 0;
     padding: 0;
-    background: #f5f5f5;
+    font-family: 'Lato', sans-serif;
   }
 `;
 
