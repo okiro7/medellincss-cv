@@ -7,7 +7,7 @@ import Info from '../components/Info';
 
 import {createGlobalStyle} from "styled-components";
 
-const GlobalStyle = createGlobalStyle `
+const GlobalStyle = createGlobalStyle`
   body {
     @import url('https://fonts.googleapis.com/css?family=Lato:300,400|Roboto:300,400,500');
     @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');

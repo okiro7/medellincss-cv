@@ -2,15 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 import Social from './Social';
 
-const AboutStyle = styled.div `
+const AboutStyle = styled.div`
   text-align: center;
 `;
 
-const AboutAvatar = styled.div `
+const AboutAvatar = styled.div`
   padding: 2em 0 0 0;
 `;
 
-const AboutAvatarImg = styled.img `
+const AboutAvatarImg = styled.img`
   border-radius: 100%;
   width: 160px;
   height: 160px;
