@@ -2,8 +2,12 @@ import React from 'react';
 import About from '../components/About';
 import Sidebar from '../components/Sidebar';
 import Main from '../components/Main';
-import Education from '../components/Education';
 import Info from '../components/Info';
+import Education from '../components/Education';
+import Experience from '../components/Experience';
+import Certificates from '../components/Certificates ';
+import Skills from '../components/Skills';
+
 
 import {createGlobalStyle} from "styled-components";
 
@@ -40,13 +44,75 @@ const data = {
     ],
     "education":[
         {
-            "degree":"",
+            "degree":"College",
             "institution":"Universidad del Valle",
             "startDate":"2010/05/01",
             "endDate":"2015/05/01",
-            "description":"Sede Tulua", 
+            "description":"Tulua", 
+        },{
+            "degree":"School",
+            "institution":"Gimnasio del Pacifico",
+            "startDate":"2004/01/01",
+            "endDate":"2010/01/01",
+            "description":"Tulua", 
         }
-    ]
+    ],
+    "experience": [
+		{
+			"company": "Suramericana",
+			"endDate": "Present",
+			"jobDescription": "Analista de Desarrollo.",
+			"jobTitle": "Backend",
+			"startDate": "Jan 2015"
+		},
+		{
+			"company": "Ingeneo",
+			"endDate": "Jan 2015",
+			"jobDescription": "Analista de Desarrollo",
+			"jobTitle": "Backend",
+			"startDate": "Sept 2010"
+		}
+    ],
+    "certificate": [
+		{
+			"date": "Jan 2010",
+			"description": "Scrum Developer",
+			"institution": "Seonti",
+			"name": "Scrum Developer"
+		},
+		{
+			"date": "Jan 2011",
+			"description": "Oracle Sql Expert",
+			"institution": "Oracle",
+			"name": "Oracle Sql Expert"
+		}
+	],
+    "skills": [
+		{
+			"name": "HTML5",
+			"percentage": "75%"
+		},
+		{
+			"name": "CSS",
+			"percentage": "25%"
+		},
+		{
+			"name": "JavaScript",
+			"percentage": "55%"
+		},
+		{
+			"name": "React",
+			"percentage": "90%"
+        },
+        {
+			"name": "Java",
+			"percentage": "95%"
+        },
+        {
+			"name": "Plsql",
+			"percentage": "80%"
+		}
+	]
 }
 
 const App = () => {
@@ -65,6 +131,9 @@ const App = () => {
             </Sidebar>
             <Info>
                 <Education data={data.education}/>
+                <Experience data={data.experience} />
+                <Certificates data={data.certificate} />
+                <Skills data={data.skills} />
             </Info>
         </Main>
     );
